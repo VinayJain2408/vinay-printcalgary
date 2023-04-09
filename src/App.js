@@ -1,12 +1,14 @@
 import React from 'react'
-import TopHeader from './top header/TopHeader'
-import FirstHeader from './top header/FirstHeader'
+import TopHeader from './header/top header/TopHeader'
+import TwoHeader from './header/second header/TwoHeader'
+// import FirstHeader from './top header/FirstHeader'
 
 function App() {
   return (
     <>
     <TopHeader />
-    <FirstHeader />
+    <TwoHeader />
+    {/* <FirstHeader /> */}
     </>
   )
 }
