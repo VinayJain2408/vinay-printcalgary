@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './firstheader.css'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,11 +15,6 @@ import { pink } from '@mui/material/colors';
 export default function TopHeader() {
   return (
     <Box sx={{
-      primary: pink,
-      secondary: {
-        main: '#ffebee',
-        fontSize: '0.5rem',
-      },
     }}>
       <AppBar position="static" sx={{
         display: 'flex',
@@ -26,26 +22,63 @@ export default function TopHeader() {
         justifyContent: 'space-between',
         alignItems: 'center',
         fontSize: '0.5rem',
-        primary: pink,
-        secondary: {
-          main: '#ffebee',
-        },
+       background:"#eeeeee",
+        padding:'10px 2px'
       }}>
         <Toolbar variant="dense">
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <PhoneCallbackIcon /><span>(403) 235-1616</span>
+            <PhoneCallbackIcon 
+            style={{
+              fontSize:'1.2rem',
+              color:'#ec407a'
+            }}/>
+            <span 
+            style={{
+              fontSize:'1.2rem',
+              color:'black'
+            }}>(403) 235-1616</span>
           </IconButton>
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <MailOutlineIcon /><span>orders@printcalgary.com</span>
+            <MailOutlineIcon 
+            style={{
+              fontSize:'1.2rem',
+              color:'#ec407a'
+            }}/>
+            <span
+            style={{
+              fontSize:'1.2rem',
+              color:'black'
+            }}
+            >orders@printcalgary.com</span>
           </IconButton>
 
         </Toolbar>
         <Toolbar variant="dense">
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <PersonIcon /><span>My Account</span>
+            <PersonIcon 
+              style={{
+                fontSize:'1.2rem',
+                color:'#ec407a'
+              }}
+            /><span
+            style={{
+              fontSize:'1.2rem',
+              color:'black'
+            }}
+            >My Account</span>
           </IconButton>
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <FavoriteIcon /><span>Wishlist</span>
+            <FavoriteIcon 
+              style={{
+                fontSize:'1.2rem',
+                color:'#ec407a'
+              }}
+            /><span
+            style={{
+              fontSize:'1.2rem',
+              color:'black'
+            }}
+            >Wishlist</span>
           </IconButton>
 
         </Toolbar>

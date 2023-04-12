@@ -3,12 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-.head{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-}
-.middle{
-    display: flex;
-    
-}

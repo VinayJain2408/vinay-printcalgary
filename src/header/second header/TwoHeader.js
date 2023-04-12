@@ -148,7 +148,7 @@ function TwoHeader() {
           </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} 
           style={{
-            padding:'0 0 0 4rem'
+            padding:'0 0 0 rem'
           }}>
             {pages.map((page) => (
               <Button
@@ -161,13 +161,13 @@ function TwoHeader() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow:  1, display: { xs: 'none', md: 'flex' }  }}>
             
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 < FavoriteBorderIcon  style={
                 {
                   padding:'1rem',
-                  fontSize:"2rem",
+                  fontSize:"4rem",
                   color:'#ec407a'
                 }
                }/>
@@ -176,7 +176,7 @@ function TwoHeader() {
                < AddShoppingCartIcon  style={
                 {
                   padding:'1rem',
-                  fontSize:"2rem",
+                  fontSize:"4rem",
                   color:'#ec407a',
                   // fontWeight:'2rem',
                 }
