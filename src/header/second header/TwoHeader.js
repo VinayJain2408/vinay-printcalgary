@@ -46,7 +46,12 @@ function TwoHeader() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl"
+      style={
+        {
+          background:"white"
+        }
+      }>
         <Toolbar >
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
 
